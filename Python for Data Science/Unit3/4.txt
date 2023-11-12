@@ -1,0 +1,1 @@
+333 We are learning file handling in pythong. this file is opened as write
