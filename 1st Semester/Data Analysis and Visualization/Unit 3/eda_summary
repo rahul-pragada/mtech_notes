@@ -1,0 +1,41 @@
+import pandas as pd
+Import numpy as np
+Import matplotlib.pyplot as plt
+Import seaborn as sns
+From sklearn import preprocessing
+
+pd.read_csv()
+First remove duplicates.
+	•  df.duplicated()
+	• df.drop_duplicates.()
+	• df.shape
+Find if there are null values
+	• Numerical
+	•  pf.DataFrame({'value' : Data['Number'], 'Missing?' : Data['Number'].isnull()}) #try it more
+	• pf.DataFrame({'value' : Data['column name'], 'Missing val?' : Data['column name'].isnull()})
+		○ Only recognizes nan as null
+	•  df.isnull().sum()
+	• Categorical
+		○  df['column'].value_counts()
+• Fill the null values
+	• categorical
+		○ df['column'].fillna(max occurance, inplace)
+	• Numerical
+		○ Df.loc[2, 'column'] = value #updating single value
+		○ df['column'].fillna(df['column'].mean(), inplace)
+	• Drop entire rol
+		○ df.dropna(inplace=True)
+• Dealing with incorrect values
+	• Manually verify 
+• Handling Categorical variable
+	• One hot encoding
+• Outlier detection or treating
+	• Import plotly.express as px
+	• Fig = px.box(df, y=column) fig.show()
+	•  df.loc[df['column']> n, 'column']=20 #try it more
+• Data Standardization
+	• StandardScalar ob ob.transform(df['column'])
+• Categorical to numeric
+	• LabelEncoder() ob ob.transform(df['column'])
+
+• Univariate Analysis
